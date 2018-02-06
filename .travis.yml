@@ -13,7 +13,7 @@ install:
     - mv reveal.js-master reveal.js
 
 script:
-    - jupyter nbconvert "file.ipynb" --to slides
+    - jupyter nbconvert Univariable Cost Function.ipynb" --to slides
 after_success: |
     if [ -n 72107d5180eccfef76046956ca94551aec1325c3 ]; then
     git checkout --orphan gh-pages
