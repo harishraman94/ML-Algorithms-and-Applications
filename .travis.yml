@@ -18,7 +18,7 @@ after_success: |
     if [ -n 72107d5180eccfef76046956ca94551aec1325c3 ]; then
     git checkout --orphan gh-pages
     git rm -rf --cached .
-    mv Univariable Cost Function.slides.html index.html
+    mv "Univariable Cost Function.slides.html" index.html
     git add -f --ignore-errors index.html img reveal.js
     git -c user.name='travis' -c user.email='travis' commit -m init
     git push -f -q https://harishraman94:72107d5180eccfef76046956ca94551aec1325c3@github.com/harishraman94/ML-Algorithms-and-Applications gh-pages
